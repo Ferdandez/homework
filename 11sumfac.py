@@ -5,15 +5,15 @@
 # No, you may not use math.factorial()
 # Use the same loop for both calculations
 import math
-
+# your code goes here
 n = 5
 
-# your code goes here
-lnfac = 0.5 * math.log(math.tau) + (n + 0.5) * math.log(n) \
-	-n + 1/(12*n) - 1 / (360 * (n**3))
-
-print((n), n + 10 , (math.ceil(math.e**lnfac)))
-# I pinky promise to figure out how to do a running sum WITHOUT looking it up on the internet! I will be coming to class more often to I can interact with my classmates and ask for help :)
+sum_n = 0 # putting anything else will just add the number to the real sum
+factorial_n = 1 #need to set the start point as one for this to work
+for i in range (1, n+1, 1): #this will keep looping back until complete
+	sum_n += i
+	factorial_n *= i 
+print(n, sum_n, factorial_n)
 """
 python3 11sumfac.py
 5 15 120
