@@ -18,7 +18,7 @@ for i in range(len(seq)):
 			gc_count += 1
 			GC_frac = (gc_count / w)
 	if i >= w-1:
-		print(f'{i-10}, {window}, {GC_frac:.6f}')
+		print(f'{i-10}, {window}, {GC_frac:.4f}')
 		if seq[i-(w-1)] == 'G' or seq[i-(w-1)] == 'C':
 				gc_count -= 1
 				GC_frac = (gc_count / w)
